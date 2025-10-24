@@ -1,83 +1,141 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mateusz Ostaszewski – AI Researcher</title>
-  <style>
-    body {
-      font-family: sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f7f7f7;
-      color: #222;
-    }
-    header {
-      background-color: #ffffff;
-      padding: 2rem;
-      text-align: center;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    }
-    h1 {
-      margin: 0 0 0.5rem;
-    }
-    .links a {
-      margin: 0 0.5rem;
-      color: #007acc;
-      text-decoration: none;
-    }
-    .container {
-      max-width: 900px;
-      margin: 2rem auto;
-      padding: 0 1rem;
-    }
-    .section {
-      margin-bottom: 3rem;
-    }
-    .publication {
-      display: flex;
-      gap: 1rem;
-      margin-bottom: 1.5rem;
-      background-color: #fff;
-      padding: 1rem;
-      border-radius: 8px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-    }
-    .publication img {
-      width: 150px;
-      height: auto;
-      object-fit: contain;
-    }
-    .publication-details a {
-      margin-right: 0.5rem;
-      text-decoration: none;
-      color: #007acc;
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mateusz Ostaszewski – AI Researcher</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+
+body {
+font-family: 'Inter', sans-serif;
+margin: 0;
+padding: 0;
+background: linear-gradient(to right, #f5f8fa, #e8f0f8);
+color: #222;
+}
+header {
+background-color: #ffffffcc;
+backdrop-filter: blur(4px);
+padding: 2rem;
+text-align: center;
+box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+h1 {
+margin: 0 0 0.5rem;
+font-size: 2.2rem;
+}
+.links a {
+margin: 0 0.5rem;
+color: #005fa3;
+text-decoration: none;
+font-weight: 500;
+}
+.container {
+max-width: 900px;
+margin: 2rem auto;
+padding: 0 1rem;
+}
+.section {
+margin-bottom: 3rem;
+}
+.section h2 {
+font-size: 1.6rem;
+border-bottom: 2px solid #ccc;
+padding-bottom: 0.3rem;
+}
+.publication {
+display: flex;
+flex-direction: column;
+gap: 0.5rem;
+margin-bottom: 1.5rem;
+background-color: #fff;
+padding: 1rem;
+border-radius: 8px;
+box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+.publication b {
+font-size: 1.05rem;
+color: #111;
+}
+.publication .authors {
+font-size: 0.95rem;
+color: #444;
+}
+.btn-links a {
+display: inline-block;
+margin-right: 0.5rem;
+margin-top: 0.3rem;
+padding: 0.3rem 0.6rem;
+border: 1px solid #007acc;
+border-radius: 4px;
+color: #007acc;
+text-decoration: none;
+font-size: 0.85rem;
+}
+</style>
 </head>
 <body>
-  <header>
-    <h1>Mateusz Ostaszewski</h1>
-    <p>AI Researcher</p>
-    <div class="links">
-      <a href="https://scholar.google.pl/citations?user=kzoti-4AAAAJ&hl=en">[Google Scholar]</a>
-      <a href="https://orcid.org/0000-0002-0215-4674">[ORCID]</a>
-      <a href="https://www.linkedin.com/in/mateusz-ostaszewski-093167155/">[LinkedIn]</a>
-    </div>
-  </header>
+<header>
+<h1>Mateusz Ostaszewski</h1>
+<p>AI Researcher</p>
+<div class="links">
+<a href="https://scholar.google.pl/citations?user=kzoti-4AAAAJ&hl=en">Google Scholar</a>
+<a href="https://orcid.org/0000-0002-0215-4674">ORCID</a>
+<a href="https://www.linkedin.com/in/mateusz-ostaszewski-093167155/">LinkedIn</a>
+</div>
+</header>
 
-  <div class="container">
-    <div class="section">
-      <h2>About Me</h2>
-      <p>
-        I work on reinforcement learning and deep learning, with a particular interest in building autonomous artificial intelligence systems.
-        My goal is to develop agents capable of continuous adaptation to dynamic environments and autonomous decision-making without external supervision.
-        From an application perspective, I am especially interested in the use of AI to support scientific discovery across disciplines.
-      </p>
-    </div>
+
+<div class="container">
+<div class="section">
+<h2>About Me</h2>
+<p>
+I work on reinforcement learning and deep learning, with a particular interest in building autonomous AI systems that can continuously adapt and make decisions in dynamic environments. From an application perspective, I am especially interested in the use of AI to support scientific discovery across disciplines.
+</p>
+</div>
+
+
 
     <div class="section">
       <h2>Selected publications</h2>
+
+      <div class="publication">
+        <div class="publication-details">
+          <b>PhysGym: Benchmarking LLMs in Interactive Physics Discovery with Controlled Priors</b>
+          <div class="authors">Yimeng Chen, Piotr Piȩkos, Mateusz Ostaszewski, Firas Laakom, Jürgen Schmidhuber; <i>NeurIPS 2025</i></div>
+       
+          <div class="btn-links">
+            <a href="https://arxiv.org/abs/2507.15550">paper</a>
+            <a href="https://github.com/principia-ai/PhysGym">code</a>
+            <a href="https://huggingface.co/datasets/YimengChen/PhysGym">dataset</a>
+          </div>
+        </div>
+      </div>
+
+      
+      <div class="publication">
+        <div class="publication-details">
+          <b>A Case for Validation Buffer in Pessimistic Actor-Critic</b>
+          <div class="authors">Michal Nauman, Mateusz Ostaszewski, Marek Cygan; <i>IJCAI 2025</i></div>
+       
+          <div class="btn-links">
+            <a href="https://www.ijcai.org/proceedings/2025/665">paper</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="publication">
+        <div class="publication-details">
+          <b>Balancing Expressivity and Robustness: Constrained Rational Activations for Reinforcement Learning</b>
+          <div class="authors">Rafał Surdej, Michał Bortkiewicz, Alex Lewandowski, Mateusz Ostaszewski*, Clare Lyle*; <i>CoLLAs 2025 (Oral)</i></div>
+       
+          <div class="btn-links">
+            <a href="https://arxiv.org/abs/2507.14736">paper</a>
+          </div>
+        </div>
+      </div>
 
       <div class="publication">
         <div class="publication-details">
@@ -178,7 +236,7 @@
 <div class="publication">
         <div class="publication-details">
           <b>Reinforcement learning for optimization of variational quantum circuit architectures</b>
-          <div class="authors">Mateusz Ostaszewski, Lea M Trenkwalder, Wojciech Masarczyk, Eleanor Scerri, Vedran Dunjko; <i>(NeurIPS 2021)</i></div>
+          <div class="authors">Mateusz Ostaszewski, Lea M Trenkwalder, Wojciech Masarczyk, Eleanor Scerri, Vedran Dunjko; <i>NeurIPS 2021</i></div>
 
           <div class="btn-links">
             <a href="https://arxiv.org/pdf/2310.19537">paper</a>
@@ -201,5 +259,17 @@
 
     </div>
   </div>
+  <div class="section">
+<h2>Service</h2>
+<p>
+I have served as a reviewer for the following conferences and journals:
+<ul>
+<li>ICLR 2024</li>
+<li>NeurIPS 2024</li>
+<li>NeurIPS 2025</li>
+<li>Quantum (journal)</li>
+</ul>
+</p>
+</div>
 </body>
 </html>
